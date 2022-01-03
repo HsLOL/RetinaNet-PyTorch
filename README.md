@@ -22,14 +22,17 @@ The SSDD dataset, well-trained retinanet detector, resnet-50 pretrained model on
 |:----------:|:----------:|:----------:|:-----------:|:----------------:|  
 |32          | 416 x 416  | 0.89       | 0.8891      | 32.2 M           |  
 - loss curve  
-<img src="./pics/loss_curve.png" width="700" height="300"/>  
+<img src="./pics/loss_curve.png" width="500" height="200"/>  
+
 - mAP metrics on training set and val set  
-<img src="./pics/eval_curve.png" width="700" height="300"/>  
+<img src="./pics/eval_curve.png" width="500" height="00"/>  
+
 - learning rate curve (using warmup lr rate)  
-<img src="./pics/lr.png" width="300" height="300"/>  
+<img src="./pics/lr.png" width="200" height="200"/>  
+
 ## :boom:Get Started  
 ### Installation
-#### A. Install requirements:
+#### A. Install requirements:  
 ```
 conda create -n retinanet python=3.7
 conda activate retinanet
