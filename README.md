@@ -8,7 +8,7 @@ RetinaNet Detector original paper link is [here](https://openaccess.thecvf.com/c
 <img src="./pics/inshore_predict.png" width="300" height="300"/>  
 
 ### Detection Performance on Inshore image.  
-<img src="./pics/offshore_predict.png" width="300" height="300"/>  
+<img src="./pics/offshore_predict.png" width="500" height="300"/>  
 
 ## :dart:Experiment
 The SSDD dataset, well-trained retinanet detector, resnet-50 pretrained model on ImageNet, loss curve, evaluation metrics results are below, you could follow my experiment.  
@@ -21,7 +21,12 @@ The SSDD dataset, well-trained retinanet detector, resnet-50 pretrained model on
 | Batch Size | Input Size | mAP (Mine) | mAP (MMdet) | Model Parameters |  
 |:----------:|:----------:|:----------:|:-----------:|:----------------:|  
 |32          | 416 x 416  | 0.89       | 0.8891      | 32.2 M           |  
-- loss curve
+- loss curve  
+<img src="./pics/loss_curve.png" width="700" height="300"/>  
+- mAP metrics on training set and val set  
+<img src="./pics/eval_curve.png" width="700" height="300"/>  
+- learning rate curve (using warmup lr rate)  
+<img src="./pics/lr.png" width="300" height="300"/>  
 ## :boom:Get Started  
 ### Installation
 #### A. Install requirements:
