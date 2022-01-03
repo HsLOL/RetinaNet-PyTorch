@@ -93,5 +93,5 @@ you should manual set projcet's hyper parameters in `config.py`
 ## Evaluation  
 ## :bulb:Inferences  
 Thanks for these great work.  
-[https://github.com/ming71/DAL](https://github.com/ming71/DAL)
+[https://github.com/ming71/DAL](https://github.com/ming71/DAL)  
 [https://github.com/zylo117/Yet-Another-EfficientDet-Pytorch](https://github.com/zylo117/Yet-Another-EfficientDet-Pytorch)
