@@ -22,7 +22,7 @@ The SSDD dataset, well-trained retinanet detector, resnet-50 pretrained model on
 |:----------:|:----------:|:----------:|:-----------:|:----------------:|  
 |32          | 416 x 416  | 0.89       | 0.8891      | 32.2 M           |  
 - loss curve  
-<img src="./pics/loss_curve.png" width="500" height="250"/>  
+<img src="./pics/loss_curve.png" width="900" height="250"/>  
 
 - mAP metrics on training set and val set  
 <img src="./pics/eval_curve.png" width="500" height="250"/>  
