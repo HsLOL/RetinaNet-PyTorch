@@ -90,4 +90,8 @@ you should manual set projcet's hyper parameters in `config.py`
 ### C. Train RetinaNet detector on a custom dataset with pretrianed resnet-50 from scratch
 ```
 ```
-## Evaluation
+## Evaluation  
+## :bulb:Inferences  
+Thanks for these great work.  
+[https://github.com/ming71/DAL](https://github.com/ming71/DAL)
+[https://github.com/zylo117/Yet-Another-EfficientDet-Pytorch](https://github.com/zylo117/Yet-Another-EfficientDet-Pytorch)
