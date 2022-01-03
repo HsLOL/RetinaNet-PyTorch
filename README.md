@@ -12,9 +12,9 @@ The SSDD dataset, well-trained retinanet detector, resnet-50 pretrained model on
 - well-trained retinanet detector weight file [BaiduYun]() `extraction code=`  
 - pre-trained ImageNet resnet-50 weight file [BaiduYun]() `extraction code=`  
 - evaluation metrics(iou=.5)  
-|Batch Size|Input Size|mAP (Mine)|mAP (MMdet)|Model Parameters|
-|:--------:|:--------:|:--------:|:---------:|:--------------:|
-|32        |416 x 416 |0.89      |0.8891     |32.2 M|
+|Batch Size|Input Size|mAP (Mine)|mAP (MMdet)|Model Parameters|  
+|:--------:|:--------:|:--------:|:---------:|:--------------:|  
+|32        |416 x 416 |0.89      |0.8891     |32.2 M|  
 - loss curve
 ## :boom:Get Started  
 ### Installation
