@@ -5,10 +5,10 @@ RetinaNet Detector original paper link is [here](https://openaccess.thecvf.com/c
 ## :star2:Performance of the implemented RetinaNet Detector  
 
 ### Detection Performance on Offshore image.  
-<img src="https://github.com/HsLOL/RetinaNet-PyTorch/tree/master/pics/inshore_predict.png" width="300" height="300"/>  
+<img src="https://github.com/HsLOL/RetinaNet-PyTorch/tree/master/pics/inshore_predict.png" width="450" height="450"/>  
 
 ### Detection Performance on Inshore image.  
-<img src="https://github.com/HsLOL/RetinaNet-PyTorch/tree/master/pics/offshore_predict.png" width="300" height="300"/>  
+<img src="https://github.com/HsLOL/RetinaNet-PyTorch/tree/master/pics/offshore_predict.png" width="450" height="450"/>  
 
 ## :dart:Experiment
 The SSDD dataset, well-trained retinanet detector, resnet-50 pretrained model on ImageNet, loss curve, evaluation metrics results are below, you could follow my experiment.  
