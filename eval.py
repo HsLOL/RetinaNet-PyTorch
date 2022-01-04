@@ -223,6 +223,7 @@ if __name__ == '__main__':
     parser.add_argument('--single_image', type=str, default='train/000025.jpg',
                         help='the relative path of image for test')
     parser.add_argument('--target_size', type=int, default=448)
+    parser.add_argument('--chkpt', type=str, default='54_1595.pth', help='the checkpoint file of the trained model.')
 
     parser.add_argument('--evaluate', type=bool, default=True)
     parser.add_argument('--FPS', type=bool, default=False, help='Check the FPS of the Model.')
@@ -237,7 +238,7 @@ if __name__ == '__main__':
     from models.model import RetinaNet
     model = RetinaNet(backbone='resnet50', loss_func=cfg.loss_func, pretrained=False)
 
-    checkpoint = os.path.join(cfg.output_path, 'checkpoints', 'best/best.pth')
+    checkpoint = os.path.join(cfg.output_path, 'checkpoints', args.chkpt)
 
     # from checkpoint load model weight file
     # model weight
