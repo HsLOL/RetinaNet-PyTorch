@@ -123,12 +123,15 @@ Note: If you find classification loss change slowly, please be patient, it's not
 ## Evaluation  
 ### A. evaluate model performance on val set.  
 ```
+python eval.py --device 0 --evaluate True --FPS False --Offshore False --Inshore False --chkpt 54_1595.pth
 ```
-### B. evaluate model performance on InShore sences.  
+### B. evaluate model performance on InShore and Offshore sences.  
 ```
+python eval.py --device 0 --evaluate False --FPS False --Offshore True --Inshore True --chkpt 54_1595.pth
 ```
-### C. evaluate model performance on OffShore sences.  
+### C. evaluate model FPS
 ```
+python eval.py --device 0 --evaluate False --FPS True --Offshore False --Inshore Fasle --chkpt 54_1595.pth
 ```
 ## :bulb:Inferences  
 Thanks for these great work.  
