@@ -1,6 +1,6 @@
 ## :rocket:RetinaNet Horizontal Detector Based PyTorch
 This is a horizontal detector **RetinaNet** implementation on remote sensing **ship dataset** (SSDD).  
-This re-implemented retinanet has the almost the same mAP(iou=.5) with the MMdetection.  
+This re-implemented retinanet has the almost the same mAP(iou=0.25, score_iou=0.15) with the MMdetection.  
 RetinaNet Detector original paper link is [here](https://openaccess.thecvf.com/content_ICCV_2017/papers/Lin_Focal_Loss_for_ICCV_2017_paper.pdf).  
 ## :star2:Performance of the implemented RetinaNet Detector  
 
@@ -16,11 +16,18 @@ The SSDD dataset, well-trained retinanet detector, resnet-50 pretrained model on
 - gt labels for eval [BaiduYun](https://pan.baidu.com/s/1sWx5T_YbAUkmTxvYzl9SfQ) `extraction code=vqaw`  
 - well-trained retinanet detector weight file [BaiduYun]() `extraction code=`  
 - pre-trained ImageNet resnet-50 weight file [BaiduYun](https://pan.baidu.com/s/16o2b03hBogEB2UDmhyPeAQ) `extraction code=mmql`  
-- evaluation metrics(iou=.5)  
+- evaluation metrics(iou=0.25, score_iou=0.15)  
 
 | Batch Size | Input Size | mAP (Mine) | mAP (MMdet) | Model Parameters |  
 |:----------:|:----------:|:----------:|:-----------:|:----------------:|  
-|32          | 416 x 416  | 0.89       | 0.8891      | 32.2 M           |  
+|32          | 416 x 416  | 0.8828     | 0.8891      | 32.2 M           |  
+
+- Other metrics (Precision/Recall/F1 score)  
+
+|Precision (Mine)|Precision (MMDet)|Recall (Mine)|Recall (MMdet)|F1 score (Mine)|F1 score(MMdet)|
+|:--------------:|:---------------:|:-----------:|:------------:|:-------------:|:-------------:|
+|0.8077          |0.8502           |0.9062       |0.91558       |0.8541         |0.8817         |  
+
 - loss curve  
 <img src="./pics/loss_curve.png" width="900" height="250"/>  
 
@@ -107,7 +114,7 @@ you should manual set projcet's hyper parameters in `config.py`
 2. Other settings (Optional)  
    if you want to follow my experiment, dont't change anything.  
 ```
-### C. Train RetinaNet detector on a custom dataset with pretrianed resnet-50 from scratch  
+### C. Train RetinaNet detector on SSDD dataset with pretrianed resnet-50 from scratch  
 #### C.1 Download the pre-trained resnet-50 pth file  
 you should download the pre-trained ImageNet Dataset resnet-50 pth file first and put this pth file in resnet_pretrained_pth/ folder.  
 #### C.2 Train RetinaNet Detector on SSDD Dataset with pre-trained pth file  
