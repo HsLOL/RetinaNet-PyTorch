@@ -13,7 +13,8 @@ RetinaNet Detector original paper link is [here](https://openaccess.thecvf.com/c
 ## :dart:Experiment
 The SSDD dataset, well-trained retinanet detector, resnet-50 pretrained model on ImageNet, loss curve, evaluation metrics results are below, you could follow my experiment.  
 - SSDD dataset [BaiduYun](https://pan.baidu.com/s/1KTA930p74xJf5uNU9z4ZNg) `extraction code=pa8j`  
-- gt labels for eval [BaiduYun](https://pan.baidu.com/s/1sWx5T_YbAUkmTxvYzl9SfQ) `extraction code=vqaw`  
+- gt labels for eval data set [BaiduYun](https://pan.baidu.com/s/1sWx5T_YbAUkmTxvYzl9SfQ) `extraction code=vqaw` (ground-truth)  
+- gt labels for train data set [BaiduYun](https://pan.baidu.com/s/1Nwv6qfg2CUVngRS7CG46Tw) `extraction code=datk`  (train-ground-truth)  
 - well-trained retinanet detector weight file [BaiduYun](https://pan.baidu.com/s/1JkjAt9Y4o5tyfXSlfFOV6w) `extraction code=b0e1`  
 - pre-trained ImageNet resnet-50 weight file [BaiduYun](https://pan.baidu.com/s/16o2b03hBogEB2UDmhyPeAQ) `extraction code=mmql`  
 - evaluation metrics(iou=0.25, score_iou=0.15)  
@@ -77,6 +78,8 @@ $ROOT_PATH
 	    -instances_val.json  
 	-ground-truth/  
 	    -*.txt  # gt label in txt format (for voc evaluation method and evaluae inshore and offshore scence)  
+	-train-ground-truth/
+	    -*.txt  # gt label in txt format (for voc evaluation method)
     -SSDD_data_InShore/  
         -images/
 	    -*.jpg  # inshore scence images
