@@ -65,4 +65,4 @@ if __name__ == '__main__':
     # Check
     print(f'the number of the classes: {len(cfg.classes)}')
     for cat in cfg.classes:
-        print(
+        print(cat)
