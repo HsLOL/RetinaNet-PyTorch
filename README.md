@@ -111,11 +111,26 @@ you should manual set projcet's hyper parameters in `config.py`
 #### C.1 Download the pre-trained resnet-50 pth file  
 you should download the pre-trained ImageNet Dataset resnet-50 pth file first  
 and put this pth file in resnet_pretrained_pth/ folder.  
-#### C.2 Train RetinaNet Detector on SSDD Dataset with pre-trained pth file
+#### C.2 Train RetinaNet Detector on SSDD Dataset with pre-trained pth file  
 ```
-python train.py 
+# with batchsize 32 and using voc evaluation method during training for 50 epochs  
+python train.py --batch_size 32 --epoch 50 --eval_method voc  
+  
+# with batchsize 32 and using coco evalutation method during training for 50 epochs  
+python train.py --batch_size 32 --epoch 50 --eval_method coco  
+
+Note: If you find classification loss change slowly, please be patient, it's not a mistake.
 ```
 ## Evaluation  
+### A. evaluate model performance on val set.  
+```
+```
+### B. evaluate model performance on InShore sences.  
+```
+```
+### C. evaluate model performance on OffShore sences.  
+```
+```
 ## :bulb:Inferences  
 Thanks for these great work.  
 [https://github.com/ming71/DAL](https://github.com/ming71/DAL)  
