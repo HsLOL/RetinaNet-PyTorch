@@ -15,7 +15,7 @@ The SSDD dataset, well-trained retinanet detector, resnet-50 pretrained model on
 - SSDD dataset [BaiduYun](https://pan.baidu.com/s/1KTA930p74xJf5uNU9z4ZNg) `extraction code=pa8j`  
 - gt labels for eval [BaiduYun](https://pan.baidu.com/s/1sWx5T_YbAUkmTxvYzl9SfQ) `extraction code=vqaw`  
 - well-trained retinanet detector weight file [BaiduYun]() `extraction code=`  
-- pre-trained ImageNet resnet-50 weight file [BaiduYun]() `extraction code=`  
+- pre-trained ImageNet resnet-50 weight file [BaiduYun](https://pan.baidu.com/s/16o2b03hBogEB2UDmhyPeAQ) `extraction code=mmql`  
 - evaluation metrics(iou=.5)  
 
 | Batch Size | Input Size | mAP (Mine) | mAP (MMdet) | Model Parameters |  
@@ -99,12 +99,21 @@ python show.py --chkpt 54_1595.pth --result_path show_result --pic_name demo1.jp
 ### A. Prepare dataset
 you should structure your dataset files as shown above.  
 ### B. Manual set project's hyper parameters
-you should manual set projcet's hyper parameters in `config.py`
+you should manual set projcet's hyper parameters in `config.py`  
 ```
+# 1. data file structure (Must Be Set !)  
+#    has shown above.  
 
+# 2. Other settings (Optional)  
+#    if you want to follow my experiment, dont't change anything.  
 ```
-### C. Train RetinaNet detector on a custom dataset with pretrianed resnet-50 from scratch
+### C. Train RetinaNet detector on a custom dataset with pretrianed resnet-50 from scratch  
+#### C.1 Download the pre-trained resnet-50 pth file  
+you should download the pre-trained ImageNet Dataset resnet-50 pth file first  
+and put this pth file in resnet_pretrained_pth/ folder.  
+#### C.2 Train RetinaNet Detector on SSDD Dataset with pre-trained pth file
 ```
+python train.py 
 ```
 ## Evaluation  
 ## :bulb:Inferences  
