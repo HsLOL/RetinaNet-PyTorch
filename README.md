@@ -14,7 +14,7 @@ RetinaNet Detector original paper link is [here](https://openaccess.thecvf.com/c
 The SSDD dataset, well-trained retinanet detector, resnet-50 pretrained model on ImageNet, loss curve, evaluation metrics results are below, you could follow my experiment.  
 - SSDD dataset [BaiduYun](https://pan.baidu.com/s/1KTA930p74xJf5uNU9z4ZNg) `extraction code=pa8j`  
 - gt labels for eval [BaiduYun](https://pan.baidu.com/s/1sWx5T_YbAUkmTxvYzl9SfQ) `extraction code=vqaw`  
-- well-trained retinanet detector weight file [BaiduYun]() `extraction code=`  
+- well-trained retinanet detector weight file [BaiduYun](https://pan.baidu.com/s/1JkjAt9Y4o5tyfXSlfFOV6w) `extraction code=b0e1`  
 - pre-trained ImageNet resnet-50 weight file [BaiduYun](https://pan.baidu.com/s/16o2b03hBogEB2UDmhyPeAQ) `extraction code=mmql`  
 - evaluation metrics(iou=0.25, score_iou=0.15)  
 
