@@ -43,11 +43,51 @@ Note: If you meet some troubles about installing environment, you can see the ch
 ```
 #### B. Install nms module:
 ```
-cd utils/nms
+cd utils/HBB_NMS_GPU
 make
 ```
 ## Demo
-you should download the trained weight file.
+### A. Set project's data path  
+you should set project's data path in `config.py` first.
+```
+# config.py
+# Note: all the path should be absolute path.  
+data_path = r'$ROOT_PATH/SSDD_data/'  # absolute data root path  
+output_path = r'$ROOT_PATH/Output/'  # absolute model output path  
+  
+inshore_data_path = r''  # absolute Inshore data path  
+offshore_data_path = r''  # absolute Offshore data path  
+
+# An example  
+$ROOT_PATH
+    -SSDD_data/
+        -train/  # train set 
+	    -*.jpg
+	-val/  # val set
+	    -*.jpg
+	-annotations/  # gt label in json format (for coco evaluation method)  
+	    -instances_train.json  
+	    -instances_val.json  
+	-ground-truth/  
+	    -*.txt  # gt label in txt format (for voc evaluation method)  
+    -SSDD_data_InShore/  
+        -images/
+	    -*.jpg  # inshore scence images
+	-ground-truth/
+	    -*.txt  # inshore scence gt labels  
+    -SSDD_data_OffShore/  
+        -images/  
+	    -*.jpg  # offshore scence images
+	-ground-truth/  
+	    -*.txt  # offshore scence gt labels
+
+    -Output/
+        -checkpoints/
+	    - the path of saving tensorboard log event
+	-evaluate/  
+	    - the path of saving model detection results for evaluate (coco/voc/inshore/offshore)  
+```
+### B. you should download the trained weight file.  
 ```
 # run the simple inference script to get detection result.
 python show.py
