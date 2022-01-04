@@ -101,16 +101,15 @@ you should structure your dataset files as shown above.
 ### B. Manual set project's hyper parameters
 you should manual set projcet's hyper parameters in `config.py`  
 ```
-# 1. data file structure (Must Be Set !)  
-#    has shown above.  
+1. data file structure (Must Be Set !)  
+   has shown above.  
 
-# 2. Other settings (Optional)  
-#    if you want to follow my experiment, dont't change anything.  
+2. Other settings (Optional)  
+   if you want to follow my experiment, dont't change anything.  
 ```
 ### C. Train RetinaNet detector on a custom dataset with pretrianed resnet-50 from scratch  
 #### C.1 Download the pre-trained resnet-50 pth file  
-you should download the pre-trained ImageNet Dataset resnet-50 pth file first  
-and put this pth file in resnet_pretrained_pth/ folder.  
+you should download the pre-trained ImageNet Dataset resnet-50 pth file first and put this pth file in resnet_pretrained_pth/ folder.  
 #### C.2 Train RetinaNet Detector on SSDD Dataset with pre-trained pth file  
 ```
 # with batchsize 32 and using voc evaluation method during training for 50 epochs  
