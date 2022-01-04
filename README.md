@@ -52,11 +52,11 @@ you should set project's data path in `config.py` first.
 ```
 # config.py
 # Note: all the path should be absolute path.  
-data_path = r'$ROOT_PATH/SSDD_data/'  # absolute data root path  
-output_path = r'$ROOT_PATH/Output/'  # absolute model output path  
+data_path = r'/$ROOT_PATH/SSDD_data/'  # absolute data root path  
+output_path = r'/$ROOT_PATH/Output/'  # absolute model output path  
   
-inshore_data_path = r''  # absolute Inshore data path  
-offshore_data_path = r''  # absolute Offshore data path  
+inshore_data_path = r'/$ROOT_PATH/SSDD_data_InShore/'  # absolute Inshore data path  
+offshore_data_path = r'/$ROOT_PATH/SSDD_data_OffShore/'  # absolute Offshore data path  
 
 # An example  
 $ROOT_PATH
@@ -69,7 +69,7 @@ $ROOT_PATH
 	    -instances_train.json  
 	    -instances_val.json  
 	-ground-truth/  
-	    -*.txt  # gt label in txt format (for voc evaluation method)  
+	    -*.txt  # gt label in txt format (for voc evaluation method and evaluae inshore and offshore scence)  
     -SSDD_data_InShore/  
         -images/
 	    -*.jpg  # inshore scence images
@@ -87,41 +87,17 @@ $ROOT_PATH
 	-evaluate/  
 	    - the path of saving model detection results for evaluate (coco/voc/inshore/offshore)  
 ```
-### B. you should download the trained weight file.  
+### B. you should download the well-trained SSDD Dataset weight file.  
 ```
-# run the simple inference script to get detection result.
-python show.py
+# download and put the well-trained pth file in checkpoints/ folder 
+# and run the simple inferene script to get detection result  
+# you can find the model output predict.jpg in show_result/ folder.  
+
+python show.py --chkpt 54_1595.pth --result_path show_result --pic_name demo1.jpg  
 ```
 ## Train
 ### A. Prepare dataset
-you should structure your dataset files like this.
-```
-# dataset structure should be like this
-datasets/
-    -your_project_name/
-        -train_set_name/
-            -*.jpg
-        -val_set_name/
-            -*.jpg
-        -annotations
-            -instances_{train_set_name}.json
-            -instances_{val_set_name}.json
-
-# for example, coco2017
-datasets/
-    -coco2017/
-        -train2017/
-            -000000000001.jpg
-            -000000000002.jpg
-            -000000000003.jpg
-        -val2017/
-            -000000000004.jpg
-            -000000000005.jpg
-            -000000000006.jpg
-        -annotations
-            -instances_train2017.json
-            -instances_val2017.json
-```
+you should structure your dataset files as shown above.  
 ### B. Manual set project's hyper parameters
 you should manual set projcet's hyper parameters in `config.py`
 ```
