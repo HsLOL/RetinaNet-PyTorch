@@ -93,6 +93,8 @@ $ROOT_PATH
 
     -Output/
         -checkpoints/
+	    - the path of saving chekpt files
+        -tensorboard/
 	    - the path of saving tensorboard log event
 	-evaluate/  
 	    - the path of saving model detection results for evaluate (coco/voc/inshore/offshore)  
@@ -147,3 +149,5 @@ python eval.py --device 0 --evaluate False --FPS True --Offshore False --Inshore
 Thanks for these great work.  
 [https://github.com/ming71/DAL](https://github.com/ming71/DAL)  
 [https://github.com/zylo117/Yet-Another-EfficientDet-Pytorch](https://github.com/zylo117/Yet-Another-EfficientDet-Pytorch)
+## :fast_forward:ZhiHu Link
+[zhihu article](https://zhuanlan.zhihu.com/p/456299637)
